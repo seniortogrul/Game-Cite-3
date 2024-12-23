@@ -1,0 +1,508 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30em;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 25px 20px 20px 20px;
+}
+
+header img {
+    width: 120px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.menu a:hover {
+    border-bottom: 2px solid orange;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    padding: 20px 15px 0 15px;
+    color: white;
+}
+
+.headright {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.headright button {
+    background-color: #f98f20;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.sec1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    background-color: black;
+    color: white;
+    /* border: 3px solid red; */
+    padding: 10px 45px;
+}
+
+.sec1top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    /* border: 1px solid; */
+}
+
+.sec1topicon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    /* border: 1px solid; */
+}
+
+.active {
+    color: orange;
+}
+
+.sec1bottom {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: space-around;
+    background-color: #1c150f;
+    padding: 35px 80px;
+    /* width: 600px; */
+}
+
+.sec1bottom i {
+    font-size: 30px;
+    color: orange;
+}
+
+.sec1bottom1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    text-align: center;
+    padding-left: 30px;
+    padding-top: 15px;
+}
+
+.sec1bottom2 {
+    border-left: 2px solid;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    text-align: center;
+    padding-left: 20px;
+    padding-top: 15px;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sec2left {
+    padding-left: 80px;
+}
+
+.sec2 img {
+    border-radius: 20px;
+    width: 600px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.sec2 img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    transform-origin: 1.5s;
+}
+
+.sec2right {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 350px;
+}
+
+.sec2righticon {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.sec2righticon i {
+    color: #399918;
+}
+
+.sec3 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 9em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sec3left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* border: 1px solid; */
+    width: 400px;
+    line-height: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.sec3left button {
+    background-color: #dd7000;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 20em;
+    right: 13em;transition-duration: 1s;
+}
+
+.sec3left button:hover {
+    width: 300px;
+    
+}
+
+.sec3right img {
+    width: 400px;
+    height: 400px;
+}
+
+.sec3right img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    transform-origin: 1.5s;
+}
+
+.sec4 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 7em;
+    width: 100%;
+    background-color: black;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sec4 img {
+    width: 400px;
+    height: 400px;
+}
+
+.sec4 img:hover {
+    transform: scale(1.1);
+    transition-duration: 1.5s;
+    transform-origin: 1.5s;
+}
+
+.sec4right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    /* border: 1px solid; */
+    width: 400px;
+    line-height: 20px;
+    align-items: center;
+    position: relative;
+}
+
+.sec4right button {
+    background-color: #dd7000;
+    color: white;
+    width: 200px;
+    height: 50px;
+    font-size: 15px;
+    font-weight: bold;
+    position: absolute;
+    top: 20em;
+    right: 13em;
+}
+
+.sec4right button:hover {
+    width: 300px;
+    transition-duration: 1s;
+}
+
+.sec6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3em;
+    justify-content: center;
+    background-color: #1c150f;
+    color: white;
+    text-align: center;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sec6 h1 {
+    font-size: 40px;
+}
+
+.sec6cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3em;
+}
+
+.sec6card1 {
+    border: 4px solid #5f3b11;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 380px;
+    padding: 40px 20px;
+    background-color: #100901;
+}
+
+.card1top {
+    display: flex;
+    flex-direction: row;
+    gap: 70px;
+}
+
+.card1topleft {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.card1topright {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.card1top img {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    object-fit: cover
+}
+
+.sec6icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50em;
+}
+
+.sec6iconsleft {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 10px;
+}
+
+.icon1 {
+    width: 60px;
+    height: 20px;
+    background-color: #db7000;
+    border-radius: 20px;
+}
+
+.icon2 {
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sec6iconsright {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.sec6righticon1 i {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #db7000;
+    border-radius: 25px;
+    padding-top: 13px;
+    color: #db7000;
+
+}
+
+.sec6righticon1 i:hover {
+    transform: scale(1.5);
+    transition-duration: 1s;
+    padding-right: 30px;
+
+
+}
+
+.sec6righticon2 i {
+    width: 50px;
+    height: 50px;
+    background-color: #db7000;
+    border-radius: 25px;
+    padding-top: 15px;
+}
+
+.sec6righticon2 i:hover {
+    transition-duration: 1s;
+    padding-left: 30px;
+    transform: scale(1.5);
+}
+
+.sec7 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #110801;
+    gap: 50px;
+    color: white;
+    padding-top: 5em;
+    padding-bottom: 5em;
+}
+
+.sec7top{
+    text-align: left;
+    margin-right: 37em;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sec7 h1 {
+    font-size: 40px;
+}
+
+.sec7bottom {
+    background-color: #1b1b1b;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.sec7bottomleft {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sec7bottomright {
+    padding: 20px;
+position: relative;
+display: flex;
+    flex-direction: row;
+}
+
+.sec7bottomright input {
+    width: 300px;
+    height: 50px;
+    border-radius: 10px;
+}
+
+.sec7bottomright button {
+position: absolute;
+    background-color: #db7000;
+    left: 200px;
+    top: 30px;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    border: none;
+}
+footer{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 5em;
+    padding-top: 5em;
+}
+.foot1{
+    display: flex;
+    flex-direction: row;
+justify-content: space-between;
+gap: 100px;
+line-height: 30px;
+}
+.footfonts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+    position: relative;
+    top: 120px;
+}
+.footfonts i{
+font-size: 30px;
+}
+.footfonts i:hover{
+    transform: scale(1.5);
+    transition-duration: 0.5s;
+}
+.foot2{
+    text-align: center;
+    padding-top: 40px;
+}
